@@ -1,0 +1,62 @@
+.container-wraper{
+}
+.circle-background{
+	background-color: #000;
+}
+.header-promotional{
+	margin-top:70px;
+}
+#form-uudaikh{
+	
+	background:url(../background/header/brhd.png);
+	background-attachment:fixed;
+}
+#form-uudaikh h2{
+	text-align: center;
+	color: #fff;
+	font-size: 32px;
+}
+#form-uudaikh h3{
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+}
+#form-uudaikh p{
+	margin: 10px 0px 10px 60px;
+	color: #CCCCCC;
+}
+.img-cangiua{
+	margin-top: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:300px;
+	height:200px;
+}
+.content-quytrinhlamviec{
+	margin-top:10px;
+	background:url(../background/content/brhd2.png);
+	background-attachment:fixed;
+}
+.img-content{
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 10px auto 15px auto;
+}
+.quytrinh {
+	text-align: center;
+	color: #fff;
+}
+.glyphicon-ok{
+	color: #2ab346;
+}
+
+/*giới thiệu công ty*/
+.infomation{
+	text-align:center;
+	font-size:28px;
+	background-image:url(../background/content/brct.png);
+	background-attachment:fixed;
+	color:#000;
+}

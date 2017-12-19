@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Kích hoạt ẩn xuất flat menu với javascript</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
+    <link rel="icon" href="http://www.thuthuatweb.net/wp-content/themes/HostingSite/favicon.ico" type="image/x-ico"/>
+</head>
+<body>
+    
+<h4>Click vào biểu tượng để hiển thị menu</h4>
+
+<a href="#menu" id="toggle"><span></span></a>
+
+<div id="menu">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+    
+<div class="footer-bar">
+    <span class="article-wrapper">
+        <span class="article-label">Xem Bài Viết: </span>
+        <span class="article-link"><a href="https://www.thuthuatweb.net/javacript/kich-hoat-an-xuat-flat-menu-voi-javascript.html">Kích hoạt ẩn xuất flat menu với javascript</a></span>
+    </span>
+    
+</div>
+    
+<script type="text/javascript">
+   var theToggle = document.getElementById('toggle');
+
+// hasClass
+function hasClass(elem, className) {
+	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+}
+// addClass
+function addClass(elem, className) {
+    if (!hasClass(elem, className)) {
+    	elem.className += ' ' + className;
+    }
+}
+// removeClass
+function removeClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+	if (hasClass(elem, className)) {
+        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+            newClass = newClass.replace(' ' + className + ' ', ' ');
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    }
+}
+// toggleClass
+function toggleClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+    if (hasClass(elem, className)) {
+        while (newClass.indexOf(" " + className + " ") >= 0 ) {
+            newClass = newClass.replace( " " + className + " " , " " );
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    } else {
+        elem.className += ' ' + className;
+    }
+}
+
+theToggle.onclick = function() {
+   toggleClass(this, 'on');
+   return false;
+}
+</script>   
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+body, div, h1, form, fieldset, input, textarea {
+	margin: 0; padding: 0; border: 0; outline: none;
+}
+
+body {
+	background: #abb5cb url(blue-bg.png);
+	font-family: Helvetica, Sans-Serif; color: #525c73;
+	line-height: 40px; text-transform: uppercase;
+}
+
+
+#container {
+	width: 560px; margin: 100px auto; padding: 51px 0 0 0;
+	background: url(lines.png); position: relative;
+}
+	#container:before {
+		content: ""; width: 19px; height: 365px; position: absolute; left: -19px; top: 0;
+		background: url(shadow.png); 
+	}
+
+h1 {
+	font-size: 30px;
+	text-align: center; letter-spacing: 5px;
+	margin: 0 0 44px 0;
+}
+
+label {
+	width: 150px; display: block;
+	text-align: right; float: left;
+	font-size: 18px; letter-spacing: 3px;
+	margin: 0 10px 40px 0; clear: left;
+}
+
+input {
+	width: 300px; height: 40px; float: left; margin: -14px 0 0 0;
+	background: url(dots.png); 
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 24px; color: #18326d; letter-spacing: 3px;
+}
+
+textarea {
+	width: 300px; height: 200px; float: left; margin: -14px 0 40px 0;
+	background: url(dots.png); 
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 24px; color: #18326d; letter-spacing: 3px;
+}
+
+input#send {
+	width: 202px; height: 84px; float: right;
+	margin: 0 70px 36px 0; padding: 0 0 0 77px;
+	background: url(post-mark.png);
+	font: bold 30px Helvetica, Sans-Serif; text-transform: uppercase; color: #525c73;
+	cursor: pointer;
+	
+}
+
+/*Thats all. I hope you enjoyed it.
+Thanks :)*/
+/***************************************************************/
+/*************** Footer Bar Style ******************************/
+/***************************************************************/
+.footer-bar
+{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #111;
+    border-top: 1px solid #E62600;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer-bar .article-wrapper{
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #888;
+    float: left;
+    margin-left: 10%;
+}
+.footer-bar .article-link a, .footer-bar .article-link a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+.site-link a, .site-link a:visited{
+    color: #888;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    float: right;
+    margin-right: 10%;
+    text-decoration: none;
+}
+.site-link a:hover{
+    color: #E62600;
+}

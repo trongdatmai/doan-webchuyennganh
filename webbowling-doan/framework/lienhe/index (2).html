@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Thiết kế Form theo phong cách thời học sinh với CSS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="http://www.thuthuatweb.net/wp-content/themes/HostingSite/favicon.ico" type="image/x-ico"/>
+</head>
+<body>
+
+<div id="container">
+	
+	<h1>Send a Letter</h1>
+	
+	<form action="" method="post">
+		<fieldset>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" />
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" />
+			
+			<label for="message">Message:</label>
+			<textarea id="message" name="message"></textarea>
+			
+			<input type="submit" id="send" value="Send" />
+			
+		</fieldset>
+	</form>
+</div>  
+
+<div class="footer-bar">
+    <span class="article-wrapper">
+        <span class="article-label">Xem Bài Viết: </span>
+        <span class="article-link"><a href="https://www.thuthuatweb.net/css/thiet-ke-form-theo-phong-cach-thoi-hoc-sinh-voi-css.html">Thiết kế Form theo phong cách thời học sinh với CSS</a></span>
+    </span>
+    
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="autoResize.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+	   $('textarea#message').autoResize();
+});	
+</script>   
+    
+
+
+</body>
+</html>

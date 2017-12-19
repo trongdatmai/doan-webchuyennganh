@@ -1,0 +1,1 @@
+<div class="footer" style="line-height:100px;text-align:center;font-size:25px;color:#F00">ĐỒ ÁN CHUYÊN NGÀNH BOWLING</div>

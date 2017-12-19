@@ -1,0 +1,101 @@
+*{
+	padding:0;
+	margin:0;
+}
+.wraper{
+	margin:auto;	
+	width:1280px;
+	height:auto;
+}
+.slide-image{
+	width:804px;
+	height:321px;
+	
+}
+.header{
+
+	width:100%;
+	height:850px;
+	
+}
+.header .header-bottom{
+	width:100%;
+	height:700px;
+	background:#0FF;
+	margin-top:40px;
+	}
+.header1{
+	width:100%;
+	height:230px;
+	}
+.menu{	
+	width:1090px;
+	height:34px;
+	margin:auto;
+	
+}
+.content{
+	width:1230px;
+	height:800px;
+	margin:auto;
+	border-radius:20px;
+}
+.left{
+	height:800px;
+	width:270px;
+	float:left;
+}
+.right{
+	width:950px;
+	height:790px;
+	float:right;
+	margin-top:10px;
+}
+.right .Dangky-right{
+	width: 700px;
+	height:500px;
+	background:#0FC;
+	margin-top:50px;
+	margin-left:50px;
+	
+}
+
+.right .contentRightleft table 
+{
+	margin-top:40px;
+	
+	border:1px ;
+	color:#000;
+	background:#FFF;
+}
+.right .contentRightleft table tr
+{
+	width:390px;
+	border:1px solid #000;
+	
+}
+.right .contentRightleft table tr td
+{	
+	width:25%;
+	height:25px;
+	font-size:16px;
+	border:1px solid #000;
+	
+
+}
+.right .contentRightright .formSanphamtuychon
+{	
+	
+	margin-left:50px;
+}
+.right .Datlane
+{
+	width:100%;
+	height:500px;
+	margin-top:70px;
+	
+}
+.footer{
+	width:100%;
+	height:200px;
+}

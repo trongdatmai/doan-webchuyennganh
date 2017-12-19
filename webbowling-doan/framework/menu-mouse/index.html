@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Dễ dàng tạo Context Menu với jQuery và CSS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="icon" href="http://www.thuthuatweb.net/wp-content/themes/HostingSite/favicon.ico" type="image/x-ico"/>
+</head>
+<body>
+
+<h1>Context Menu</h1>
+<span class="demoStyle">
+  <i class="fa fa-angle-right"></i> Nhấp chuột phải để thấy Context Menu</span>
+<!-- STATIC LAYOUT ENDS -->
+<ul class="contextMenu" hidden>
+  <li><a href="#"><i class="fa fa-home"></i> Homepage</a></li>
+  <li><a href="#"><i class="fa fa-sitemap"></i> Sitemap</a></li>
+  <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+  <li>
+      <a class="fa fa-facebook" href="#"></a>
+      <a class="fa fa-twitter" href="#"></a>
+      <a class="fa fa-google-plus" href="#"></a>
+      <a class="fa fa-linkedin" href="#"></a>
+  </li>
+</ul>
+    
+    
+<div class="footer-bar">
+    <span class="article-wrapper">
+        <span class="article-label">Xem Bài Viết: </span>
+        <span class="article-link"><a href="https://www.thuthuatweb.net/css/de-dang-tao-context-menu-voi-jquery-va-css.html">Dễ dàng tạo Context Menu với jQuery và CSS</a></span>
+    </span>
+    
+</div>
+    
+    
+<script src="jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).bind("contextmenu", function(event) {
+    event.preventDefault();
+    $("ul.contextMenu")
+        .show()
+        .css({top: event.pageY + 15, left: event.pageX + 10});
+});
+$(document).click(function() {
+  isHovered = $("ul.contextMenu").is(":hover");
+  if (isHovered == false){
+    $("ul.contextMenu").fadeOut("fast");
+  }
+});
+</script>   
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+
+
+
+#container-1 {
+	width: 560px; margin: 100px auto; padding: 51px 0 0 0;
+	background: url(lines.png); position: relative;
+}
+	#container-1:before {
+		content: ""; width: 19px; height: 365px; position: absolute; left: -19px; top: 0;
+		background: url(shadow.png); 
+	}
+
+h1 {
+	font-size: 30px;
+	text-align: center; letter-spacing: 5px;
+	margin: 0 0 44px 0;
+}
+
+label {
+	width: 150px; display: block;
+	text-align: right; float: left;
+	font-size: 18px; letter-spacing: 3px;
+	margin: 0 10px 40px 0; clear: left;
+}
+
+input {
+	width: 300px; height: 40px; float: left; margin: -14px 0 0 0;
+	background: url(dots.png); 
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 24px; color: #18326d; letter-spacing: 3px;
+}
+
+textarea {
+	width: 300px; height: 200px; float: left; margin: -14px 0 40px 0;
+	background: url(dots.png); 
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 24px; color: #18326d; letter-spacing: 3px;
+}
+
+input#send {
+	width: 202px; height: 84px; float: right;
+	margin: 0 70px 36px 0; padding: 0 0 0 77px;
+	background: url(post-mark.png);
+	font: bold 30px Helvetica, Sans-Serif; text-transform: uppercase; color: #525c73;
+	cursor: pointer;
+	
+}
+
+/*Thats all. I hope you enjoyed it.
+Thanks :)*/
+/***************************************************************/
+/*************** Footer Bar Style ******************************/
+/***************************************************************/
